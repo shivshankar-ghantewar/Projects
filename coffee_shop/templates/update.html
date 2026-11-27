@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+        {% include 'nav.html'%}
+    <h2>Student Registration Form</h2>
+
+    <form action="/profilesave" method="post">
+        <input type="hidden" name="id" value="{{data[0]}}">
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required value="{{data[1]}}">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" required value="{{data[2]}}">
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Enter password" required value="{{data[3]}}">
+        <br><br>
+
+        <label>Contact:</label>
+        <input type="tel" name="contact" placeholder="Enter contact number" required value="{{data[4]}}">
+        <br><br>
+
+        <button type="submit">Update</button>
+
+    </form>
+
+</body>
+
+</html>

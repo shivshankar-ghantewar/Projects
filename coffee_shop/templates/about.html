@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+
+    <style>
+        #f-h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+            padding-top: 20px;
+            color: blueviolet;
+            padding-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        #f-p1{
+            font-size: large;
+            margin: 20px;
+        }
+
+        #s_img{
+             height: 500px;
+             width: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+    {% include 'nav.html'%}
+    <div class="grid text-center">
+        <div class="g-col-6">
+          <h1 id="f-h1"> About Us ☕</h1>
+
+<p id="f-p1">Welcome to our coffee shop, where every cup tells a story! We’re passionate about serving freshly brewed coffee, delicious treats, and creating a warm, cozy space where everyone feels at home.
+
+Whether you're stopping by for your morning coffee, catching up with friends, or enjoying a peaceful moment alone, we're here to make every visit special.
+
+We believe great coffee brings people together. That's why we focus on quality, freshness, and friendly service in every cup. 
+
+More than just coffee, it's a feeling. ❤️  <br> <br>
+
+Come for the coffee, stay for the moments!  </p>
+        </div>
+        <div class="g-col-6">
+            <img src="{{url_for('static',filename='images/about_img.png')}}" alt="" id="s_img">
+        </div>
+    </div>
+
+
+</body>
+
+</html>

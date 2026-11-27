@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <style>
+        .navbar {
+            position: fixed;
+            width: 100%;
+        }
+
+        #contact-container {
+            margin-left: 30px;
+        }
+
+        img {
+            height: 400px;
+            width: 400px;
+            transition: all 0.7;
+
+        }
+
+        img:hover {
+            box-shadow: 2px 2px 6px 2px rgb(184, 215, 13);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        {% include 'nav.html'%}
+    </div>
+    <div id="contact-container">
+        <h1 style="padding-top: 100px; margin-bottom: 10px;">Let's Connect</h1>
+        <img src="{{url_for('static',filename='images/contact.jfif')}}" alt="">
+        <h3 style="margin-top: 10px;"> Contact Information</h3>
+        <b>Address</b>: 123 Coffee Street, Nanded, Maharashtra <br>
+        <b>Phone</b>: +91 98765 43210 <br>
+        <b>Email</b>: hello@coffeecafe.com <br>
+        <b>Opening Hours</b>: 9:00 AM – 10:00 PM <br>
+    </div>
+</body>
+
+</html>

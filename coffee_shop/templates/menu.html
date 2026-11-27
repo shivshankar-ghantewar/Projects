@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(188, 227, 60);
+            margin-bottom: 20px;
+        }
+
+        .class-container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .card{
+            margin: 45px;
+        }
+        .navbar{
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+        }
+
+        .card img{
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">{% include 'nav.html'%}</div>
+    <h1>Menu</h1>
+    <div class="class-container">
+        <section class="card" style="max-width: 320px">
+            <img src="{{url_for('static',filename='images/g1.jfif')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Espresso</h4>
+                <p class="card-text">A rich and bold coffee shot with a smooth crema on top. Perfect for those who love strong coffee and intense flavor.</p>
+                <a href="#" class="btn-solid theme-primary">₹120</a>
+            </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+            <img src="{{url_for('static',filename='images/g2.jfif')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Cappuccino</h4>
+                <p class="card-text">A delicious blend of espresso, steamed milk, and creamy milk foam. Enjoy a perfectly balanced coffee experience.</p>
+                <a href="#" class="btn-solid theme-primary">₹180</a>
+            </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+            <img src="{{url_for('static',filename='images/g3.jfif')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Cafe Latte</h4>
+                <p class="card-text">Smooth espresso mixed with steamed milk, offering a creamy texture and mild coffee flavor.</p>
+                <a href="#" class="btn-solid theme-primary">₹160</a>
+            </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+            <img src="{{url_for('static',filename='images/g4.jfif')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Mocha</h4>
+                <p class="card-text">A delightful combination of espresso, rich chocolate, and steamed milk. Perfect for chocolate and coffee lovers.</p>
+                <a href="#" class="btn-solid theme-primary">₹200</a>
+            </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+            <img src="{{url_for('static',filename='images/g5.jfif')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Americano</h4>
+                <p class="card-text">A classic coffee made with espresso and hot water. Light-bodied, refreshing, and full of authentic coffee flavor.</p>
+                <a href="#" class="btn-solid theme-primary">₹140</a>
+            </div>
+        </section>
+
+        <section class="card" style="max-width: 320px">
+            <img src="{{url_for('static',filename='images/g6.jfif')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Cold Coffee</h4>
+                <p class="card-text">A chilled and creamy coffee blended with milk, coffee, and ice. A refreshing treat for warm days.</p>
+                <a href="#" class="btn-solid theme-primary">₹190</a>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

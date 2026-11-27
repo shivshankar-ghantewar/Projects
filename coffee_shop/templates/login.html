@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% include 'nav.html' %}
+    <center>
+        <form action="/logincheck" method="post">
+        <h3 style="margin-top: 30px; margin-bottom: 10px;">Registration Form</h3>
+        email:- <input type="email" name="email"> <br> <br>
+        password:- <input type="password" name="password">  <br> <br>
+        <button type="submit" class="btn btn-success">Login</button>
+    </form>
+    </center>
+</body>
+</html>
